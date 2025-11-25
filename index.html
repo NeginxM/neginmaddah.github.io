@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,6 @@
             box-sizing: border-box;
         }
 
-        /* Light Mode (Purple theme) */
         :root {
             --primary-color: #4c1d95;      /* Deep purple */
             --accent-color: #a855f7;       /* Bright violet */
@@ -46,7 +46,7 @@
             --card-shadow: rgba(0, 0, 0, 0.4);
         }
 
-        /* Page-specific accent colors (you can keep these as-is) */
+        /* Page-specific accent colors */
         body[data-page="research"] {
             --accent-color: #10b981; /* Green for research */
         }
@@ -172,7 +172,7 @@
         }
 
         [data-theme="dark"] header {
-            background: linear-gradient(135deg, #020617 0%, #111827 100%);
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
         }
 
         header::before {
@@ -211,14 +211,13 @@
             }
         }
 
-        /* BIGGER + SQUARE(ish) PHOTO */
         .profile-photo img {
-            width: 240px;
-            height: 240px;
-            border-radius: 18px;  /* soft square, not circle */
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
             object-fit: cover;
-            border: 5px solid rgba(255, 255, 255, 0.35);
-            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             background: rgba(255, 255, 255, 0.1);
         }
 
@@ -281,13 +280,13 @@
         }
 
         .affiliation a {
-            color: #e9d5ff;  /* light lavender link in header */
+            color: #a3d5ff;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .affiliation a:hover {
-            color: #ffffff;
+            color: white;
             text-decoration: underline;
         }
 
@@ -411,7 +410,7 @@
         }
 
         [data-theme="dark"] .publication {
-            background: #020617;
+            background: #1e293b;
         }
 
         .publication::before {
@@ -421,7 +420,7 @@
             top: 0;
             height: 100%;
             width: 4px;
-            background: linear-gradient(135deg, var(--accent-color) 0%, #7c3aed 100%);
+            background: linear-gradient(135deg, var(--accent-color) 0%, #667eea 100%);
             transform: scaleY(0);
             transition: transform 0.3s ease;
         }
@@ -477,7 +476,7 @@
             background: var(--accent-color);
             color: white;
             transform: translateY(-2px);
-            box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3); /* purple glow */
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
         }
 
         .news-container {
@@ -497,7 +496,7 @@
         }
 
         [data-theme="dark"] .news-item {
-            background: #020617;
+            background: #1e293b;
         }
 
         .news-item:hover {
@@ -525,39 +524,39 @@
         }
 
         .tag-publication {
-            background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
-            color: #7c3aed;
-            border: 1px solid #ddd6fe;
+            background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);
+            color: #667eea;
+            border: 1px solid #667eea30;
         }
 
         [data-theme="dark"] .tag-publication {
-            background: rgba(124, 58, 237, 0.2);
-            color: #c4b5fd;
-            border: 1px solid rgba(124, 58, 237, 0.4);
+            background: rgba(96, 165, 250, 0.2);
+            color: #60a5fa;
+            border: 1px solid rgba(96, 165, 250, 0.3);
         }
 
         .tag-talk {
-            background: #e0f2fe;
-            color: #0369a1;
-            border: 1px solid #bae6fd;
+            background: #3498db20;
+            color: #3498db;
+            border: 1px solid #3498db30;
         }
 
         .tag-service {
-            background: #dcfce7;
-            color: #15803d;
-            border: 1px solid #bbf7d0;
+            background: #2ecc7120;
+            color: #27ae60;
+            border: 1px solid #2ecc7130;
         }
 
         .tag-conference {
-            background: #ecfdf5;
-            color: #047857;
-            border: 1px solid #bbf7d0;
+            background: #16a08520;
+            color: #16a085;
+            border: 1px solid #16a08530;
         }
 
         .tag-milestone {
-            background: #fef9c3;
-            color: #92400e;
-            border: 1px solid #fef3c7;
+            background: #f39c1220;
+            color: #f39c12;
+            border: 1px solid #f39c1230;
         }
 
         .news-item p {
@@ -601,18 +600,18 @@
         }
 
         .email-button {
-            background: linear-gradient(135deg, var(--accent-color) 0%, #7c3aed 100%);
-            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.25);
+            background: linear-gradient(135deg, var(--accent-color) 0%, #667eea 100%);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
         }
 
         .cv-download-button {
-            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
-            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.25);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
         }
 
         .email-button:hover, .cv-download-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(147, 51, 234, 0.35);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
             text-decoration: none;
         }
 
@@ -657,11 +656,9 @@
                 text-align: center;
             }
 
-            /* Smaller but still square on mobile */
             .profile-photo img {
-                width: 190px;
-                height: 190px;
-                border-radius: 18px;
+                width: 150px;
+                height: 150px;
             }
 
             header h1 {
@@ -721,8 +718,8 @@
         }
     </style>
 </head>
-
 <body data-page="home">
+    <!-- Theme Toggle Button (MOVED TO CORRECT POSITION) -->
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
         <svg class="sun-icon" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
